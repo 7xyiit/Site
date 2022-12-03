@@ -1,5 +1,0 @@
-DirectoryIndex index.html
-RewriteEngine on 
-RewriteCond %{HTTP_REFERER} !^$ 
-RewriteCond %{HTTP_REFERER} !^https://(www.)?yigit.live/.*$ [NC] 
-RewriteRule .(css|html|js|png|bmp)$ - [F] 
