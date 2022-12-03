@@ -1,5 +1,4 @@
-DirectoryIndex index.html
-RewriteEngine On
-RewriteCond %{HTTP_REFERER} !^http://(.+\.)?7xyiit.github\.io/ [NC]
-RewriteCond %{HTTP_REFERER} !^$
-RewriteRule .*\.(png|html|js|css)$ - [F]
+RewriteEngine on 
+RewriteCond %{HTTP_REFERER} !^$ 
+RewriteCond %{HTTP_REFERER} !^https://(www.)?yigit.live/.*$ [NC] 
+RewriteRule .(css|html|js|png|bmp)$ - [F] 
