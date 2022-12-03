@@ -1,4 +1,4 @@
 RewriteEngine on 
 RewriteCond %{HTTP_REFERER} !^$ 
-RewriteCond %{HTTP_REFERER} !^https://(www.)?yigit.live/.*$ [NC] 
+RewriteCond %{HTTP_REFERER} !^https://(www.)?7xyiit.github.io/.*$ [NC] 
 RewriteRule .(css|html|js|png|bmp)$ - [F] 
