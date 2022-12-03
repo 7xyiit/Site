@@ -1,3 +1,4 @@
+DirectoryIndex index.html
 RewriteEngine On
 RewriteCond %{HTTP_REFERER} !^http://(.+\.)?yigit\.live/ [NC]
 RewriteCond %{HTTP_REFERER} !^$
