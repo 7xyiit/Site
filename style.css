@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sacramento', cursive;
+}
+
+body {
+    background: #222;
+    height: 100vh;
+    z-index: -1;
+    background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 7px,
+    rgba(0, 0, 0, 0.8) 9px,
+    rgba(0, 0, 0, 0.8) 13px,
+    transparent 13px
+  );
+}
+
+.text-header {
+    display: flex;
+    font-size: .2em;
+    position: fixed;
+    bottom: 90%;
+    text-shadow: 0 0 5px #ffa500, 0 0 5px #ffa500, 0 0 10px #ffa500, 0 0 10px #ffa500, 0 0 15px #ff0000, 0 0 10px #ff8d00, 0 0 5px #ff0000;
+    animation: neon 12s infinite;
+}
+
+.text-header a {
+    text-decoration: none;
+    color: #fff6a9;
+    animation: neon2 12s infinite;
+}
+
+
+.text-header p[class*="home"] {
+    padding-right: 1650px;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 12em;
+    min-height: 100vh;
+}
+
+.main .text{
+    text-shadow: 0 0 5px #ffa500, 0 0 5px #ffa500, 0 0 10px #ffa500, 0 0 10px #ffa500, 0 0 15px #ff0000, 0 0 10px #ff8d00, 0 0 5px #ff0000;
+    animation: neon 12s infinite;
+    color: #fff6a9;
+    margin-left: 15px;
+}
+
+@keyframes neon {
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        text-shadow: 0 0 5px #ffa500, 0 0 5px #ffa500, 0 0 10px #ffa500, 0 0 10px #ffa500, 0 0 15px #ff0000, 0 0 10px #ff8d00, 0 0 5px #ff0000;
+        color: #fff6a9;
+    }
+}
+
+.icons {
+    font-size: 0.2em;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: 30px;
+
+}
+
+.icons i {
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 25px;
+    color: black;
+    box-shadow: 0 0 5px #ffa500, 0 0 5px #ffa500, 0 0 10px #ffa500, 0 0 10px #ffa500, 0 0 15px #ff0000, 0 0 10px #ff8d00, 0 0 5px #ff0000;
+    animation: neon2 12s infinite;
+}
+
+@keyframes neon2 {
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        text-shadow: 0 0 5px #ffa500, 0 0 5px #ffa500, 0 0 10px #ffa500, 0 0 10px #ffa500, 0 0 15px #ff0000, 0 0 10px #ff8d00, 0 0 5px #ff0000;
+        color: #fff6a9;
+        box-shadow: none;
+    }
+}
+
+@media (min-width: 250px) and (max-width:1600px) {
+    .text-header p[class*="home"] {
+        padding-right: 50px;
+    }
+    .music-btn .btn{
+        position: fixed;
+        top: 90%;
+        left: 50%;
+    }
+}
+
+.music-btn {
+    position: fixed;
+    bottom: 90.5%;
+    left: 50%;
+}
+
+.music-btn .btn {
+    background: transparent;
+    border: none;
+    color:#fff6a9;
+    text-shadow: 0 0 5px #ffa500, 0 0 5px #ffa500, 0 0 10px #ffa500, 0 0 10px #ffa500, 0 0 15px #ff0000, 0 0 10px #ff8d00, 0 0 5px #ff0000;
+    font-size: 1.3em;
+    display: block;
+    animation: neon2 12s infinite;
+}
+
+#pause {
+    display: none;
+}
